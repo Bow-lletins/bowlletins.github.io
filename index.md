@@ -1,5 +1,3 @@
----
-
 ## 🚀 Live App
 👉 [Visit Bow-lletins](https://bowlletins.vercel.app/)
 
