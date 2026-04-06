@@ -1,28 +1,51 @@
 # Bow-lletins
 
-## Team
-- Tamela Brinson
-- Annie Pham
-- Terisa Lau
-- Thomas Tran
-- Caden Tran
+### A digital bulletin board for UH Mānoa
 
-## Links
-- GitHub Repo: https://github.com/bowlletins/bow-lletins
+Bow-lletins is a centralized platform where students can discover and share opportunities like jobs, internships, study groups, events, and campus announcements — all in one place.
+
+---
+
+## 🚀 Live App
+👉 [Visit Bow-lletins](https://bowlletins.vercel.app/)
+
+---
+
+## 👥 Team
+- Tamela Brinson  
+- Annie Pham  
+- Terisa Lau  
+- Thomas Tran  
+- Caden Tran  
+
+---
+
+## 📂 Project Links
+- GitHub Repository: https://github.com/Bow-lletins/Bowlletins  
 - Deployment: https://bowlletins.vercel.app/
 
-## Team Contract
-[View Contract](https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing)
+---
 
+## 📄 Team Contract
+👉 [View Contract](https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing)
 
-## Deployment
+---
+
+## 🧠 Project Overview
+Students at UH Mānoa often miss opportunities because information is scattered across bulletin boards, emails, and social media. Bow-lletins solves this by providing a single, organized, and searchable platform for campus information.
+
+---
+
+## 🖼️ Screenshots
+*(Add screenshots of your landing page, dashboard, and features here)*
+
+---
+
+## 📌 Project Boards
+- M1 Project Board: *(Add link here)*  
+- M2 Project Board: *(Add link here)*  
+
+---
+
+## ⚙️ Deployment
 https://bowlletins.vercel.app/
-
-## Screenshots
-(Add images here)
-
-## M1 Project Board
-(Link to your GitHub Project)
-
-## M2 Project Board
-(Create empty one and link it)
