@@ -1,9 +1,3 @@
-# Bow-lletins
-
-### A digital bulletin board for UH Mānoa
-
-Bow-lletins is a centralized platform where students can discover and share opportunities like jobs, internships, study groups, events, and campus announcements — all in one place.
-
 ---
 
 ## 🚀 Live App
