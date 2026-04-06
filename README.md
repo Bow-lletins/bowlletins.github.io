@@ -1,4 +1,10 @@
-# Welcome to your organization's demo respository
-This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
+## Home Page
 
-The repo includes an `index.html` file (so it can render a web page), two GitHub Actions workflows, and a CSS stylesheet dependency.
+This repo is for updating the home page with required content frrom M1 and M2 for final project. 
+
+Coding Repo: https://github.com/Bow-lletins/Bowlletins.git
+
+Vercel:
+https://bowlletins.vercel.app/
+
+
