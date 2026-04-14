@@ -1,1 +1,5 @@
-
+.page-content {
+  background: linear-gradient(135deg, #e8fff1, #c8f2d8, #8fd3c1, #5ca9c9);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
