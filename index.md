@@ -33,6 +33,9 @@ Landing Page
 ![Landing Page](images/Landing-Page1.png)
 ![Landing Page](images/Landing-Page2.png)
 
+Signup Page: This is were you would navigate to signup for bowllettins.
+![Signup Page](images/signu_up_page.png)
+
 ---
 
 ## 📌 Project Boards
