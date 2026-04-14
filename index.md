@@ -36,8 +36,11 @@ Landing Page- This will be the first page a user sees, we chose the color scheme
 Signup Page- This is were you would navigate to signup for bowllettins.
 ![Signup Page](images/sign_up_page.png)
 
-Customize Profile Page - This option becomes available tothe user after sign uo has been initiated.
+Customize Profile Page - This option becomes available to the user after sign up has been initiated.
 ![Customize Profile Page](images/customize_profile_page.png)
+
+Create a Flyer- This page is available to users who are signed up under an organization or who is permitted by admin
+![Create a Flyer Page](images/create_flyer.png)
 
 
 ---
