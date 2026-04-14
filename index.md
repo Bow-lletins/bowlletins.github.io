@@ -44,7 +44,7 @@ Customize Profile Page - This option becomes available tothe user after sign uo 
 
 ## 📌 Project Boards
 - [M1 Project Board](https://github.com/orgs/bowlletins/projects/5/views/2)  
-- [M2 Project Board]:(https://github.com/orgs/bowlletins/projects/6) 
+- [M2 Project Board](https://github.com/orgs/bowlletins/projects/6) 
 
 ---
 
