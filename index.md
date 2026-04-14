@@ -5,7 +5,7 @@
 
 ## 👥 Team
 - [Tamela Brinson](https://github.com/Tamelab)  
-- [Annie Pham](https://github.com/AnnieP211)  
+- [Annie Pham](https://anniep211.github.io/)  
 - [Terisa Lau](https://github.com/terisa-lau)  
 - [Thomas Tran](https://github.com/ThomasTran808)  
 - [Caden Tran](https://github.com/CadenTran44)  
