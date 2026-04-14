@@ -29,12 +29,16 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 ---
 
 ## 🖼️ Screenshots
-Landing Page 
+Landing Page- This will be the first page a user sees, we chose the color scheme to reflect our beautiful school colors. 
 ![Landing Page](images/Landing-Page1.png)
 ![Landing Page](images/Landing-Page2.png)
 
-Signup Page: This is were you would navigate to signup for bowllettins.
+Signup Page- This is were you would navigate to signup for bowllettins.
 ![Signup Page](images/sign_up_page.png)
+
+Customize Profile Page - This option becomes available tothe user after sign uo has been initiated.
+![Customize Profile Page](images/customize_profile_page.png)
+
 
 ---
 
