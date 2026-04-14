@@ -4,11 +4,11 @@
 ---
 
 ## 👥 Team
-- [Tamela Brinson](https://github.com/Tamelab)  
+- [Tamela Brinson](https://tamelab.github.io/)  
 - [Annie Pham](https://anniep211.github.io/)  
-- [Terisa Lau](https://github.com/terisa-lau)  
-- [Thomas Tran](https://github.com/ThomasTran808)  
-- [Caden Tran](https://github.com/CadenTran44)  
+- [Terisa Lau](https://terisa-lau.github.io/)  
+- [Thomas Tran](https://thomastran808.github.io/)  
+- [Caden Tran](https://cadentran44.github.io/)  
 
 ---
 
