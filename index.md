@@ -13,7 +13,7 @@
 ---
 
 ## 📂 Project Links
-- [GitHub Repository](https://github.com/bowlettins)
+- [GitHub Repository](https://github.com/bowlletins)
 - [Vercel](https://bowlletins.vercel.app/)
 
 ---
