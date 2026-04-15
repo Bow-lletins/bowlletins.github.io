@@ -57,6 +57,7 @@ This option becomes available after sign-up has been started.
 </p>
 <p>
 <img src="images/customize_profile_page.png" alt="Customize Profile Page" width="700">
+<img src="images/homeProfile.png" alt="Customize Profile Page" width="700">
 </p>
 
 <h3>Create a Flyer Page</h3>
