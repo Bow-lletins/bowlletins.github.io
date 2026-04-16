@@ -39,8 +39,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 This is the first page a user sees. We chose the color scheme to reflect our school colors.
 </p>
 <p>
-<img src="images/Landing-Page1.png" alt="Landing Page 1" width="700"><br><br>
-<img src="images/Landing-Page2.png" alt="Landing Page 2" width="700">
+<img src="images/LandingPage.png" alt="Landing Page 1" width="700">
 </p>
 
 <h3>Signup Page</h3>
