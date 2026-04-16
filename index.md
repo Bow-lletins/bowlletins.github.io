@@ -59,9 +59,10 @@ This option becomes available after sign-up has been started.
 <img src="images/homeProfile.png" alt="Customize Profile Page" width="700">
 </p>
 
-<h3>Create a Flyer Page</h3>
+<h3>Flyer Detail Page</h3>
 <p>
-This page is available to users who are signed up under an organization or who have permission from an admin.
+Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.
+
 </p>
 <p>
 <img src="images/create_flyer.png" alt="Create a Flyer Page" width="700">
