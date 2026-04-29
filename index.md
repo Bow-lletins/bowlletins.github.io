@@ -3,7 +3,7 @@
 <p>
 Students at UH Mānoa often miss opportunities because information is scattered across bulletin boards, emails, and social media. Bow-lletins solves this by providing a single, organized, and searchable platform for campus information.
 </p>
-![ci-badge](https://github.com/Bow-lletins/Bowlletins/actions/workflows/ci.yml/badge.svg)
+![ci-badge](https://github.com/bowlletins/Bowlletins/actions/workflows/ci.yml/badge.svg)
 <hr>
 <h2>⚙️ Deployment</h2>
 <p>
