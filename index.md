@@ -24,6 +24,11 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 👉 <a href="https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing">View Contract</a>
 </p>
 <hr>
+<p>
+<a href="https://github.com/bowlletins">GitHub Organization</a><br>
+<a href="https://github.com/bowlletins/Bowlletins">GitHub Repository</a>
+</p>
+
 <h2>🖼️ Stay Up to Date with Bow-lletins</h2>
 
 <h3>Landing Page</h3>
@@ -57,10 +62,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 
 <hr>
 <h2>📂 Project Links</h2>
-<p>
-<a href="https://github.com/bowlletins">GitHub Organization</a><br>
-<a href="https://github.com/bowlletins/Bowlletins">GitHub Repository</a>
-</p>
+
 <hr>
 <h2>📌 Project Boards</h2>
 <p>
