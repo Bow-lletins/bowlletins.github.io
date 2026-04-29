@@ -66,6 +66,6 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p>
 <a href="https://github.com/orgs/bowlletins/projects/5/views/2">M1 Project Board</a><br>
 <a href="https://github.com/orgs/bowlletins/projects/6">M2 Project Board</a>
-<a href https://github.com/orgs/bowlletins/projects/8/views/1">M3 Project Board<a/>
+<a href="https://github.com/orgs/bowlletins/projects/8/views/1">M3 Project Board<a/>
 </p>
 </div>
