@@ -24,10 +24,14 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 👉 <a href="https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing">View Contract</a>
 </p>
 <hr>
+<hr>
+<h2>📂 Project Links</h2>
 <p>
 <a href="https://github.com/bowlletins">GitHub Organization</a><br>
 <a href="https://github.com/bowlletins/Bowlletins">GitHub Repository</a>
 </p>
+<hr>
+
 
 <h2>🖼️ Stay Up to Date with Bow-lletins</h2>
 
@@ -60,10 +64,73 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p>Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.</p>
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
 
-<hr>
-<h2>📂 Project Links</h2>
+## User Guide
 
-<hr>
+### Getting Started
+
+1. Visit the deployed site:
+   https://bowlletins.vercel.app
+
+2. Browse flyers directly without logging in.
+
+---
+
+### Browsing Flyers
+
+- Flyers are displayed as sticky notes on a corkboard background.
+- Each flyer includes:
+  - Title
+  - Description
+  - Date
+  - Location
+  - Category
+
+Click a flyer to view more details.
+
+---
+
+### Searching
+
+- The search bar is located in the navigation bar.
+- On mobile, it appears inside the dropdown menu.
+
+You can search by:
+- Title
+- Description
+- Category
+- Location
+
+---
+
+### Categories
+
+Users can filter flyers by category:
+- Jobs
+- Internships
+- Study Groups
+- Events
+- Clubs
+
+Each category opens a filtered page.
+
+---
+
+### User Permissions
+
+#### Without Logging In
+- Browse flyers
+- Search content
+- View details
+
+#### Logged-In Users
+- Save flyers
+- React (like, save)
+- Comment
+- RSVP (if enabled)
+
+---
+
+
 <h2>📌 Project Boards</h2>
 <p>
 <a href="https://github.com/orgs/bowlletins/projects/5/views/2">M1 Project Board</a><br>
