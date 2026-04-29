@@ -18,12 +18,14 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <a href="https://thomastran808.github.io/">Thomas Tran</a><br>
 <a href="https://cadentran44.github.io/">Caden Tran</a>
 </p>
+---
 <hr>
 <h2>📄 Team Contract</h2>
 <p>
 👉 <a href="https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing">View Contract</a>
 </p>
 <hr>
+---
 <hr>
 <h2>📂 Project Links</h2>
 <p>
@@ -31,7 +33,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <a href="https://github.com/bowlletins/Bowlletins">GitHub Repository</a>
 </p>
 <hr>
-
+---
 
 <h2>🖼️ Stay Up to Date with Bow-lletins</h2>
 
@@ -64,6 +66,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p>Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.</p>
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
 <div align="left">
+---
 ## User Guide
 
 ### Getting Started
@@ -73,7 +76,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 
 2. Browse flyers directly without logging in.
 
----
+
 
 ### Browsing Flyers
 
@@ -87,7 +90,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 
 Click a flyer to view more details.
 
----
+
 
 ### Searching
 
@@ -100,7 +103,7 @@ You can search by:
 - Category
 - Location
 
----
+
 
 ### Categories
 
@@ -113,7 +116,7 @@ Users can filter flyers by category:
 
 Each category opens a filtered page.
 
----
+
 
 ### User Permissions
 
