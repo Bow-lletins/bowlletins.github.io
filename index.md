@@ -65,7 +65,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p>Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.</p>
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
 <div align="left">
-
+<p>
 ## User Guide
 
 ### Getting Started
@@ -129,7 +129,7 @@ Each category opens a filtered page.
 - React (like, save)
 - Comment
 - RSVP (if enabled)
-
+</p>
 
 
 <h2 style="border-bottom: none;">🛠️ Developer Guide</h2>
