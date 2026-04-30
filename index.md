@@ -66,6 +66,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
 <div align="left">
 <p>
+
 ## User Guide
 
 ### Getting Started
