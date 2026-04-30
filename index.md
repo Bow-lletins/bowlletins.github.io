@@ -20,7 +20,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 </p>
 
 
-<h1>📄 Team Contract</h1>
+<h2>📄 Team Contract</h2>
 <a href="https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing">View Contract</a>
 <hr>
 
