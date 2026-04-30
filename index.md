@@ -133,6 +133,55 @@ Each category opens a filtered page.
 
 </div>
 
+<h2 style="border-bottom: none;">🛠️ Developer Guide</h2>
+
+<h3>Getting Started</h3>
+
+<p><strong>1. Clone the repository</strong></p>
+<pre><code>git clone https://github.com/Bow-lletins/bowlletins.git
+cd bowlletins</code></pre>
+
+<p><strong>2. Install dependencies</strong></p>
+<pre><code>npm install</code></pre>
+
+<p><strong>3. Set up environment variables</strong></p>
+<p>Create a <code>.env.local</code> file:</p>
+
+<pre><code>DATABASE_URL=
+AUTH_SECRET=
+AUTH_URL=http://localhost:3000</code></pre>
+
+<p><strong>4. Set up the database</strong></p>
+<pre><code>npx prisma generate
+npx prisma db push</code></pre>
+
+<p><strong>5. Run the app</strong></p>
+<pre><code>npm run dev</code></pre>
+
+<p>Open: <a href="http://localhost:3000">http://localhost:3000</a></p>
+
+---
+
+<h3>Useful Scripts</h3>
+
+<ul>
+  <li><code>npm run dev</code> — start development server</li>
+  <li><code>npm run build</code> — build for production</li>
+  <li><code>npm run start</code> — run production server</li>
+</ul>
+
+---
+
+<h3>Project Structure</h3>
+
+<ul>
+  <li><code>src/app/</code> — main pages</li>
+  <li><code>src/components/</code> — UI components</li>
+  <li><code>prisma/</code> — database schema</li>
+  <li><code>public/</code> — static files</li>
+</ul>
+
+
 <h2>📌 Project Boards</h2>
 <p>
 <a href="https://github.com/orgs/bowlletins/projects/5/views/2">M1 Project Board</a><br>
