@@ -64,23 +64,18 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <h3>Flyer Detail Page</h3>
 <p>Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.</p>
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
+
 <div align="left">
-   
-<h2 style="border-bottom: none;">📘 User Guide</h2>
+
+<h2>📘 User Guide</h2>
 
 <h3>Getting Started</h3>
-
 <ol>
-  <li>Visit the deployed site:
-    <a href="https://bowlletins.vercel.app">https://bowlletins.vercel.app</a>
-  </li>
+  <li>Visit the deployed site: <a href="https://bowlletins.vercel.app">https://bowlletins.vercel.app</a></li>
   <li>Browse flyers directly without logging in.</li>
 </ol>
 
----
-
 <h3>Browsing Flyers</h3>
-
 <ul>
   <li>Flyers are displayed as sticky notes on a corkboard background.</li>
   <li>Each flyer includes:
@@ -93,18 +88,13 @@ Students at UH Mānoa often miss opportunities because information is scattered 
     </ul>
   </li>
 </ul>
-
 <p>Click a flyer to view more details.</p>
 
----
-
 <h3>Searching</h3>
-
 <ul>
   <li>The search bar is located in the navigation bar.</li>
   <li>On mobile, it appears inside the dropdown menu.</li>
 </ul>
-
 <p>You can search by:</p>
 <ul>
   <li>Title</li>
@@ -113,12 +103,8 @@ Students at UH Mānoa often miss opportunities because information is scattered 
   <li>Location</li>
 </ul>
 
----
-
 <h3>Categories</h3>
-
 <p>Users can filter flyers by category:</p>
-
 <ul>
   <li>Jobs</li>
   <li>Internships</li>
@@ -126,21 +112,18 @@ Students at UH Mānoa often miss opportunities because information is scattered 
   <li>Events</li>
   <li>Clubs</li>
 </ul>
-
 <p>Each category opens a filtered page.</p>
-
----
 
 <h3>User Permissions</h3>
 
-<p><strong>Without Logging In</strong></p>
+<h4>Without Logging In</h4>
 <ul>
   <li>Browse flyers</li>
   <li>Search content</li>
   <li>View details</li>
 </ul>
 
-<p><strong>Logged-In Users</strong></p>
+<h4>Logged-In Users</h4>
 <ul>
   <li>Save flyers</li>
   <li>React (like, save)</li>
@@ -148,8 +131,7 @@ Students at UH Mānoa often miss opportunities because information is scattered 
   <li>RSVP (if enabled)</li>
 </ul>
 
-
-<h2 style="border-bottom: none;">🛠️ Developer Guide</h2>
+<h2>🛠️ Developer Guide</h2>
 
 <h3>Getting Started</h3>
 
@@ -162,7 +144,6 @@ cd bowlletins</code></pre>
 
 <p><strong>3. Set up environment variables</strong></p>
 <p>Create a <code>.env.local</code> file:</p>
-
 <pre><code>DATABASE_URL=
 AUTH_SECRET=
 AUTH_URL=http://localhost:3000</code></pre>
@@ -176,26 +157,21 @@ npx prisma db push</code></pre>
 
 <p>Open: <a href="http://localhost:3000">http://localhost:3000</a></p>
 
----
-
 <h3>Useful Scripts</h3>
-
 <ul>
   <li><code>npm run dev</code> — start development server</li>
   <li><code>npm run build</code> — build for production</li>
   <li><code>npm run start</code> — run production server</li>
 </ul>
 
----
-
 <h3>Project Structure</h3>
-
 <ul>
   <li><code>src/app/</code> — main pages</li>
   <li><code>src/components/</code> — UI components</li>
   <li><code>prisma/</code> — database schema</li>
   <li><code>public/</code> — static files</li>
 </ul>
+
 </div>
 
 <h2>📌 Project Boards</h2>
