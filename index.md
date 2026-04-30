@@ -131,7 +131,6 @@ Each category opens a filtered page.
 - RSVP (if enabled)
 
 
-</div>
 
 <h2 style="border-bottom: none;">🛠️ Developer Guide</h2>
 
@@ -180,7 +179,7 @@ npx prisma db push</code></pre>
   <li><code>prisma/</code> — database schema</li>
   <li><code>public/</code> — static files</li>
 </ul>
-
+</div>
 
 <h2>📌 Project Boards</h2>
 <p>
