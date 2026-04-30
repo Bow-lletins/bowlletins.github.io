@@ -65,72 +65,88 @@ Students at UH Mānoa often miss opportunities because information is scattered 
 <p>Users can view full details of a flyer including title, description, date, location, and contact information. Users can also RSVP, Save, or Share the flyer.</p>
 <p><img src="images/flyer_detail_page.png" alt="Flyer Detail Page" width="700"></p>
 <div align="left">
-<p>
+   
+<h2 style="border-bottom: none;">📘 User Guide</h2>
 
-## User Guide
+<h3>Getting Started</h3>
 
-### Getting Started
+<ol>
+  <li>Visit the deployed site:
+    <a href="https://bowlletins.vercel.app">https://bowlletins.vercel.app</a>
+  </li>
+  <li>Browse flyers directly without logging in.</li>
+</ol>
 
-1. Visit the deployed site:
-   https://bowlletins.vercel.app
+---
 
-2. Browse flyers directly without logging in.
+<h3>Browsing Flyers</h3>
 
+<ul>
+  <li>Flyers are displayed as sticky notes on a corkboard background.</li>
+  <li>Each flyer includes:
+    <ul>
+      <li>Title</li>
+      <li>Description</li>
+      <li>Date</li>
+      <li>Location</li>
+      <li>Category</li>
+    </ul>
+  </li>
+</ul>
 
+<p>Click a flyer to view more details.</p>
 
-### Browsing Flyers
+---
 
-- Flyers are displayed as sticky notes on a corkboard background.
-- Each flyer includes:
-  - Title
-  - Description
-  - Date
-  - Location
-  - Category
+<h3>Searching</h3>
 
-Click a flyer to view more details.
+<ul>
+  <li>The search bar is located in the navigation bar.</li>
+  <li>On mobile, it appears inside the dropdown menu.</li>
+</ul>
 
+<p>You can search by:</p>
+<ul>
+  <li>Title</li>
+  <li>Description</li>
+  <li>Category</li>
+  <li>Location</li>
+</ul>
 
+---
 
-### Searching
+<h3>Categories</h3>
 
-- The search bar is located in the navigation bar.
-- On mobile, it appears inside the dropdown menu.
+<p>Users can filter flyers by category:</p>
 
-You can search by:
-- Title
-- Description
-- Category
-- Location
+<ul>
+  <li>Jobs</li>
+  <li>Internships</li>
+  <li>Study Groups</li>
+  <li>Events</li>
+  <li>Clubs</li>
+</ul>
 
+<p>Each category opens a filtered page.</p>
 
+---
 
-### Categories
+<h3>User Permissions</h3>
 
-Users can filter flyers by category:
-- Jobs
-- Internships
-- Study Groups
-- Events
-- Clubs
+<p><strong>Without Logging In</strong></p>
+<ul>
+  <li>Browse flyers</li>
+  <li>Search content</li>
+  <li>View details</li>
+</ul>
 
-Each category opens a filtered page.
-
-
-
-### User Permissions
-
-#### Without Logging In
-- Browse flyers
-- Search content
-- View details
-
-#### Logged-In Users
-- Save flyers
-- React (like, save)
-- Comment
-- RSVP (if enabled)
-</p>
+<p><strong>Logged-In Users</strong></p>
+<ul>
+  <li>Save flyers</li>
+  <li>React (like, save)</li>
+  <li>Comment</li>
+  <li>RSVP (if enabled)</li>
+</ul>
 
 
 <h2 style="border-bottom: none;">🛠️ Developer Guide</h2>
