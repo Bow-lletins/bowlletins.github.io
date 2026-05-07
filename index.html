@@ -116,22 +116,18 @@
       text-align: center;
       box-shadow: 0 2px 6px rgba(0,0,0,0.06);
     }
-    .team-card .avatar {
-      width: 56px;
-      height: 56px;
-      background: #024731;
+    .avatar-img {
+      width: 64px;
+      height: 64px;
       border-radius: 50%;
+      object-fit: cover;
       margin: 0 auto 0.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.3rem;
-      font-weight: 700;
+      display: block;
+       border: 3px solid #024731;
     }
-    .team-card a { color: #024731; font-weight: 600; text-decoration: none; font-size: 0.95rem; }
-    .team-card a:hover { color: #17634b; text-decoration: underline; }
-    .team-card .role { font-size: 0.8rem; color: #5f6b66; margin-top: 0.3rem; }
+.team-card a { color: #024731; font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+.team-card a:hover { color: #17634b; text-decoration: underline; }
+.team-card .role { font-size: 0.8rem; color: #5f6b66; margin-top: 0.3rem; }
 
     /* LINK CHIPS */
     .links-row {
@@ -431,27 +427,27 @@
     <h2 class="section-title">👥 The Team</h2>
     <div class="team-grid">
       <div class="team-card">
-        <div class="avatar">T</div>
+        <img class="avatar-img" src="https://github.com/tamelab.png" alt="Tamela Brinson">
         <a href="https://tamelab.github.io/">Tamela Brinson</a>
         <div class="role">Lead Developer</div>
       </div>
       <div class="team-card">
-        <div class="avatar">A</div>
+        <img class="avatar-img" src="https://github.com/anniep211.png" alt="Annie Pham">
         <a href="https://anniep211.github.io/">Annie Pham</a>
         <div class="role">Community Manager</div>
       </div>
       <div class="team-card">
-        <div class="avatar">T</div>
+        <img class="avatar-img" src="https://github.com/terisa-lau.png" alt="Terisa Lau">
         <a href="https://terisa-lau.github.io/">Terisa Lau</a>
         <div class="role">Project Manager</div>
       </div>
       <div class="team-card">
-        <div class="avatar">T</div>
+        <img class="avatar-img" src="https://github.com/thomastran808.png" alt="Thomas Tran">
         <a href="https://thomastran808.github.io/">Thomas Tran</a>
         <div class="role">Content Curator</div>
       </div>
       <div class="team-card">
-        <div class="avatar">C</div>
+        <img class="avatar-img" src="https://github.com/cadentran44.png" alt="Caden Tran">
         <a href="https://cadentran44.github.io/">Caden Tran</a>
         <div class="role">Visual Designer</div>
       </div>
