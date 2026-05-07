@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bow-lletins | UH Mānoa Campus Bulletin Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f5f1e6;
+      color: #1e2a1e;
+      line-height: 1.6;
+    }
+
+    /* NAV */
+    nav {
+      background: #024731;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .nav-logo {
+      color: white;
+      font-family: 'Caveat', cursive;
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .nav-links { display: flex; gap: 1.5rem; }
+    .nav-links a {
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #C8A44D; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, #024731 0%, #0c4b37 60%, #17634b 100%);
+      color: white;
+      text-align: center;
+      padding: 5rem 2rem 4rem;
+    }
+    .hero h1 {
+      font-family: 'Caveat', cursive;
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 650px;
+      margin: 0 auto 1.5rem;
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+    .hero-badge { margin: 1rem 0; }
+    .hero-btn {
+      display: inline-block;
+      background: #C8A44D;
+      color: #1e2a1e;
+      padding: 0.75rem 2rem;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      margin-top: 1rem;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .hero-btn:hover { background: #d4b466; transform: translateY(-1px); }
+
+    /* SECTIONS */
+    .section-inner {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2.section-title {
+      font-size: 1.8rem;
+      color: #024731;
+      margin-bottom: 0.5rem;
+      border-bottom: 3px solid #C8A44D;
+      padding-bottom: 0.5rem;
+      display: inline-block;
+    }
+    h3.subsection {
+      font-size: 1.15rem;
+      color: #0c4b37;
+      margin: 2rem 0 0.75rem;
+    }
+
+    /* TEAM */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .team-card {
+      background: #fffdf8;
+      border: 1px solid #d6cfc2;
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .team-card .avatar {
+      width: 56px;
+      height: 56px;
+      background: #024731;
+      border-radius: 50%;
+      margin: 0 auto 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .team-card a { color: #024731; font-weight: 600; text-decoration: none; font-size: 0.95rem; }
+    .team-card a:hover { color: #17634b; text-decoration: underline; }
+    .team-card .role { font-size: 0.8rem; color: #5f6b66; margin-top: 0.3rem; }
+
+    /* LINK CHIPS */
+    .links-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .link-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #024731;
+      color: white;
+      padding: 0.5rem 1.1rem;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: background 0.2s;
+    }
+    .link-chip:hover { background: #17634b; }
+    .link-chip.gold { background: #C8A44D; color: #1e2a1e; }
+    .link-chip.gold:hover { background: #d4b466; }
+
+    /* SCREENSHOTS */
+    .screenshot-block {
+      margin: 2rem 0;
+      background: #fffdf8;
+      border: 1px solid #d6cfc2;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+    .screenshot-block img {
+      width: 100%;
+      display: block;
+      border-bottom: 1px solid #d6cfc2;
+    }
+    .screenshot-caption {
+      padding: 1rem 1.25rem;
+    }
+    .screenshot-caption h3 {
+      color: #024731;
+      font-size: 1.05rem;
+      margin-bottom: 0.35rem;
+    }
+    .screenshot-caption p {
+      color: #5f6b66;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    /* FEATURE LIST */
+    ul.feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 0;
+    }
+    ul.feature-list li {
+      padding: 0.25rem 0 0.25rem 1.4rem;
+      position: relative;
+      color: #1e2a1e;
+      font-size: 0.93rem;
+    }
+    ul.feature-list li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #024731;
+      font-weight: 700;
+    }
+
+    /* PERMISSIONS */
+    .perm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .perm-card {
+      background: #fffdf8;
+      border: 1px solid #d6cfc2;
+      border-radius: 10px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .perm-card h4 {
+      color: #024731;
+      margin-bottom: 0.75rem;
+      font-size: 0.88rem;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      border-bottom: 2px solid #C8A44D;
+      padding-bottom: 0.4rem;
+    }
+
+    /* FEEDBACK */
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    .feedback-card {
+      background: #fffdf8;
+      border-left: 4px solid #024731;
+      border-radius: 0 10px 10px 0;
+      padding: 1.25rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+    }
+    .feedback-card .who {
+      font-size: 0.78rem;
+      color: #5f6b66;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 0.5rem;
+    }
+    .feedback-card blockquote {
+      font-size: 0.93rem;
+      color: #1e2a1e;
+      font-style: italic;
+      line-height: 1.6;
+    }
+    .feedback-summary {
+      margin-top: 1.5rem;
+      background: #fffdf8;
+      border: 1px solid #d6cfc2;
+      border-radius: 10px;
+      padding: 1.25rem;
+    }
+    .feedback-summary strong { color: #024731; }
+
+    /* CODE */
+    pre {
+      background: #1e2a1e;
+      color: #f5f1e6;
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      overflow-x: auto;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin: 0.75rem 0 1.25rem;
+    }
+    code {
+      background: #e8e2d6;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.88em;
+      color: #024731;
+      font-family: monospace;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+      color: inherit;
+      font-size: inherit;
+    }
+
+    /* STEPS */
+    .step-block {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      align-items: flex-start;
+    }
+    .step-num {
+      background: #024731;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+      font-size: 0.9rem;
+    }
+    .step-content { flex: 1; }
+    .step-content h4 { color: #024731; margin-bottom: 0.5rem; font-size: 1rem; }
+    .step-content p { font-size: 0.9rem; color: #5f6b66; margin-bottom: 0.4rem; }
+
+    /* TABLES */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #024731;
+      color: white;
+      padding: 0.7rem 1rem;
+      text-align: left;
+    }
+    td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid #d6cfc2;
+      color: #1e2a1e;
+    }
+    tr:nth-child(even) td { background: #f8f4ec; }
+
+    /* PROJECT BOARDS */
+    .boards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .board-card {
+      background: #024731;
+      color: white;
+      border-radius: 10px;
+      padding: 1.75rem;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 3px 10px rgba(2,71,49,0.3);
+    }
+    .board-card:hover { background: #17634b; transform: translateY(-3px); }
+    .board-card .milestone { font-size: 2.2rem; margin-bottom: 0.5rem; font-family: 'Caveat', cursive; }
+    .board-card span { font-weight: 600; font-size: 0.95rem; }
+
+    /* FOOTER */
+    footer {
+      background: #024731;
+      color: white;
+      text-align: center;
+      padding: 2.5rem 2rem;
+      margin-top: 0;
+    }
+    footer a { color: #C8A44D; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    .footer-logo {
+      font-family: 'Caveat', cursive;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    footer p { opacity: 0.8; font-size: 0.9rem; }
+
+    /* RESPONSIVE */
+    @media (max-width: 640px) {
+      .hero h1 { font-size: 2.4rem; }
+      .nav-links { display: none; }
+      .section-inner { padding: 2.5rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#">📌 Bow-lletins</a>
+  <div class="nav-links">
+    <a href="#overview">Overview</a>
+    <a href="#user-guide">User Guide</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#dev-guide">Dev Guide</a>
+    <a href="#boards">Boards</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>📌 Bow-lletins</h1>
+  <p>A single, organized, and searchable platform for UH Mānoa campus information — jobs, events, internships, study groups, and more.</p>
+  <div class="hero-badge">
+    <img src="https://github.com/bowlletins/Bowlletins/actions/workflows/ci.yml/badge.svg" alt="CI Badge">
+  </div>
+  <a href="https://bowlletins.vercel.app/" class="hero-btn">View Live Site →</a>
+</div>
+
+<!-- OVERVIEW -->
+<div id="overview" style="background: #fffdf8;">
+  <div class="section-inner">
+    <h2 class="section-title">🧠 Project Overview</h2>
+    <p style="margin-top:1rem; font-size:1rem; line-height:1.8;">
+      Students at UH Mānoa often miss opportunities because information is scattered across bulletin boards, emails, and social media.
+      <strong>Bow-lletins</strong> solves this by providing a single, organized, and searchable platform for campus information.
+      Users can post, browse, save, and RSVP to flyers for jobs, events, internships, volunteer opportunities, study groups, clubs, and more.
+    </p>
+    <div class="links-row">
+      <a href="https://bowlletins.vercel.app/" class="link-chip gold">⚙️ Live Deployment</a>
+      <a href="https://github.com/bowlletins" class="link-chip">📂 GitHub Organization</a>
+      <a href="https://github.com/bowlletins/Bowlletins" class="link-chip">📁 Repository</a>
+      <a href="https://docs.google.com/document/d/12syu77LU1G1QKkW4B-k4xmobbV0jm0g-6yr_FPQ26Ls/edit?usp=sharing" class="link-chip">📄 Team Contract</a>
+    </div>
+  </div>
+</div>
+
+<!-- TEAM -->
+<div style="background: #f5f1e6;">
+  <div class="section-inner">
+    <h2 class="section-title">👥 The Team</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar">T</div>
+        <a href="https://tamelab.github.io/">Tamela Brinson</a>
+        <div class="role">Lead Developer</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">A</div>
+        <a href="https://anniep211.github.io/">Annie Pham</a>
+        <div class="role">Community Manager</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">T</div>
+        <a href="https://terisa-lau.github.io/">Terisa Lau</a>
+        <div class="role">Project Manager</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">T</div>
+        <a href="https://thomastran808.github.io/">Thomas Tran</a>
+        <div class="role">Content Curator</div>
+      </div>
+      <div class="team-card">
+        <div class="avatar">C</div>
+        <a href="https://cadentran44.github.io/">Caden Tran</a>
+        <div class="role">Visual Designer</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- USER GUIDE -->
+<div id="user-guide" style="background: #fffdf8;">
+  <div class="section-inner">
+    <h2 class="section-title">🖼️ User Guide</h2>
+
+    <div class="screenshot-block" style="margin-top:2rem;">
+      <img src="images/LandingPage.png" alt="Landing Page">
+      <div class="screenshot-caption">
+        <h3>Landing Page</h3>
+        <p>The first page a visitor sees. The color scheme reflects UH Mānoa school colors. Users can log in directly from this page or navigate to sign up.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/sign_up_page.png" alt="Sign Up Page">
+      <div class="screenshot-caption">
+        <h3>Sign Up Page</h3>
+        <p>New users register with a name, username, email, and password. Passwords must be 8+ characters and include uppercase, lowercase, a number, and a special character.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/customize_profile_page.png" alt="Customize Profile">
+      <div class="screenshot-caption">
+        <h3>Customize Profile Page</h3>
+        <p>After signing up, users can set their major, display name preference, and profile avatar.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/homeProfile.png" alt="Home Profile">
+      <div class="screenshot-caption">
+        <h3>Profile Home View</h3>
+        <p>The profile card shown in the dashboard sidebar with avatar, name, and major.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/homeDashboard.png" alt="Home Dashboard">
+      <div class="screenshot-caption">
+        <h3>Home Dashboard</h3>
+        <p>Authenticated users are brought here after logging in. The sidebar shows the user's avatar, name, and major with navigation tabs.</p>
+        <ul class="feature-list" style="margin-top:0.75rem;">
+          <li><strong>Home</strong> — stat cards (saved, created, expired counts) and recent flyers</li>
+          <li><strong>Saved Flyers</strong> — all flyers the user has saved</li>
+          <li><strong>My Flyers</strong> — flyers the user created, with Edit and View Interest buttons</li>
+          <li><strong>Expired Flyers</strong> — past flyers no longer active</li>
+          <li><strong>Create a Flyer</strong> — shortcut to the flyer creation form</li>
+          <li><strong>Admin Dashboard</strong> — visible only to admin accounts</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/about_page.png" alt="About Page">
+      <div class="screenshot-caption">
+        <h3>About Page</h3>
+        <p>Explains the problem Bow-lletins solves, the team's vision, and the platform's goals. Includes problem cards and feature vision cards.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/explore_page.png" alt="Explore Page">
+      <div class="screenshot-caption">
+        <h3>Explore Page</h3>
+        <p>Browse all active flyers in one place. Filter by category or date posted, sort by Most Recent or Most Liked. Three tabs: All, Recent, and Liked. Results are paginated (8 per page on desktop, 4 on mobile).</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/categories_page.png" alt="Categories Page">
+      <div class="screenshot-caption">
+        <h3>Categories Page</h3>
+        <p>Flyers are organized into 8 categories. Clicking a category opens a filtered page showing only flyers in that category.</p>
+        <ul class="feature-list" style="margin-top:0.75rem;">
+          <li>Jobs</li><li>Internships</li><li>Volunteer</li><li>Events</li>
+          <li>Academics</li><li>Social</li><li>Clubs &amp; Organizations</li><li>Other</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/create_flyer.png" alt="Create Flyer">
+      <div class="screenshot-caption">
+        <h3>Create Flyer Page</h3>
+        <p>Signed-in users can post a flyer with title, description, category, date, location, and contact info. Includes a color picker with 6 pastel presets and a privacy toggle (private flyers are only visible to the owner).</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/flyer_detail_page.png" alt="Flyer Detail">
+      <div class="screenshot-caption">
+        <h3>Flyer Detail Page</h3>
+        <p>Full detail view with all flyer fields. From here users can Save, RSVP, or Share the flyer. Flyer owners also see Edit and View Interest buttons — View Interest shows the full RSVP list with name, email, and major.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/announcements.png" alt="Announcements">
+      <div class="screenshot-caption">
+        <h3>Announcements Page</h3>
+        <p>Authenticated users can view site-wide announcements posted by admins, displayed as colorful sticky notes with a handwritten font. Each note shows title, body, date, and an Admin badge.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/admin_dashboard.png" alt="Admin Dashboard">
+      <div class="screenshot-caption">
+        <h3>Admin Dashboard</h3>
+        <p>Admin accounts access a protected dashboard with stat cards: total users, total flyers, total saves, and unread contact messages.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/admin_users.png" alt="Admin Users">
+      <div class="screenshot-caption">
+        <h3>Admin — Manage Users</h3>
+        <p>View all registered users with their ID, name, email, major, and role.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/admin_flyers.png" alt="Admin Flyers">
+      <div class="screenshot-caption">
+        <h3>Admin — Manage Flyers</h3>
+        <p>View, edit, or delete any flyer on the platform regardless of who created it.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/admin_messages.png" alt="Admin Messages">
+      <div class="screenshot-caption">
+        <h3>Admin — Contact Messages</h3>
+        <p>Read all contact form submissions. Messages are marked as new or read.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/admin_announcements.png" alt="Admin Announcements">
+      <div class="screenshot-caption">
+        <h3>Admin — Post Announcements</h3>
+        <p>Compose and delete site-wide announcements. Posted announcements appear to all logged-in users on the Announcements page.</p>
+      </div>
+    </div>
+
+    <div class="screenshot-block">
+      <img src="images/contact_page.png" alt="Contact Page">
+      <div class="screenshot-caption">
+        <h3>Contact Page</h3>
+        <p>Any visitor can submit a message to the team via a contact form. The page also displays team member cards with each person's role and email.</p>
+      </div>
+    </div>
+
+    <h3 class="subsection">User Permissions</h3>
+    <div class="perm-grid">
+      <div class="perm-card">
+        <h4>Not Logged In</h4>
+        <ul class="feature-list">
+          <li>Browse and search flyers</li>
+          <li>View flyer details</li>
+          <li>Submit a contact message</li>
+        </ul>
+      </div>
+      <div class="perm-card">
+        <h4>Logged-In Users</h4>
+        <ul class="feature-list">
+          <li>Create, edit, delete own flyers</li>
+          <li>Save flyers to collection</li>
+          <li>RSVP to flyers</li>
+          <li>View announcements</li>
+          <li>Change password</li>
+        </ul>
+      </div>
+      <div class="perm-card">
+        <h4>Admin Users</h4>
+        <ul class="feature-list">
+          <li>All logged-in permissions</li>
+          <li>Manage all users and flyers</li>
+          <li>Read contact messages</li>
+          <li>Post and delete announcements</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- COMMUNITY FEEDBACK -->
+<div id="feedback" style="background: #f5f1e6;">
+  <div class="section-inner">
+    <h2 class="section-title">💬 Community Feedback</h2>
+    <p style="margin-top:1rem; color:#5f6b66;">We had 5 community members from UH Mānoa test the application and provide feedback.</p>
+    <div class="feedback-grid">
+      <div class="feedback-card">
+        <div class="who">Undergraduate STEM Student</div>
+        <blockquote>"I like how easy it is to find internships all in one place instead of checking multiple sites. The corkboard look is fun and very UH-themed."</blockquote>
+      </div>
+      <div class="feedback-card">
+        <div class="who">Graduate Student</div>
+        <blockquote>"The search and filter options on the Explore page work well. I would love to be able to filter by multiple categories at once in the future."</blockquote>
+      </div>
+      <div class="feedback-card">
+        <div class="who">Student Organization Leader</div>
+        <blockquote>"Posting a flyer took less than a minute. The color picker is a nice touch. I did wish I could upload an image instead of just picking a background color."</blockquote>
+      </div>
+      <div class="feedback-card">
+        <div class="who">Part-Time Working Student</div>
+        <blockquote>"The Jobs category is exactly what I needed. The RSVP feature is useful for events — I bookmarked a career fair right from the app."</blockquote>
+      </div>
+      <div class="feedback-card">
+        <div class="who">Faculty Advisor</div>
+        <blockquote>"This would be very useful for advertising department events. The announcement system is a great way for admins to push urgent info to everyone."</blockquote>
+      </div>
+    </div>
+    <div class="feedback-summary">
+      <strong>Overall themes from feedback:</strong>
+      <ul class="feature-list" style="margin-top:0.5rem;">
+        <li>Users found the interface intuitive and on-brand for UH Mānoa</li>
+        <li>Category browsing and search were consistently praised</li>
+        <li>Most requested future feature: image uploads for flyers</li>
+        <li>RSVP and Save features were well received</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- DEVELOPER GUIDE -->
+<div id="dev-guide" style="background: #fffdf8;">
+  <div class="section-inner">
+    <h2 class="section-title">🛠️ Developer Guide</h2>
+
+    <div class="step-block">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Clone the repository</h4>
+        <pre><code>git clone https://github.com/bowlletins/Bowlletins.git
+cd Bowlletins</code></pre>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Install dependencies</h4>
+        <pre><code>npm install</code></pre>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Set up environment variables</h4>
+        <p>Create a <code>.env</code> file in the project root:</p>
+        <pre><code>DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE
+AUTH_SECRET=your_secret_here
+AUTH_URL=http://localhost:3000</code></pre>
+        <p>For email-based password resets, also add:</p>
+        <pre><code>EMAIL_SERVER_HOST=smtp.example.com
+EMAIL_SERVER_PORT=587
+EMAIL_SERVER_USER=your@email.com
+EMAIL_SERVER_PASSWORD=yourpassword
+EMAIL_FROM=no-reply@bowlletins.com</code></pre>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Set up the database</h4>
+        <pre><code>npx prisma generate
+npx prisma db push</code></pre>
+      </div>
+    </div>
+
+    <div class="step-block">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h4>Run the development server</h4>
+        <pre><code>npm run dev</code></pre>
+        <p>Open <a href="http://localhost:3000" style="color:#024731;">http://localhost:3000</a> in your browser.</p>
+      </div>
+    </div>
+
+    <h3 class="subsection">Useful Scripts</h3>
+    <table>
+      <thead><tr><th>Command</th><th>Description</th></tr></thead>
+      <tbody>
+        <tr><td><code>npm run dev</code></td><td>Start the development server</td></tr>
+        <tr><td><code>npm run build</code></td><td>Build for production</td></tr>
+        <tr><td><code>npm run start</code></td><td>Run the production server</td></tr>
+        <tr><td><code>npm run lint</code></td><td>Run ESLint</td></tr>
+      </tbody>
+    </table>
+
+    <h3 class="subsection">Project Structure</h3>
+    <pre><code>src/
+├── app/
+│   ├── about/             # About page
+│   ├── admin/             # Admin dashboard and announcements manager
+│   ├── announcements/     # Announcements page (auth required)
+│   ├── auth/              # Sign up, sign out, forgot/reset/change password
+│   ├── categories/        # Category browse + dynamic [category] pages
+│   ├── contact/           # Contact form and team page
+│   ├── create-flyer/      # Create flyer form
+│   ├── explore/           # Browse all flyers with filters
+│   ├── flyers/[id]/       # Flyer detail, edit, and RSVP list
+│   ├── homeDashboard/     # User dashboard with tabs
+│   └── profile/           # Profile settings
+├── components/            # Reusable UI components
+└── lib/                   # Auth config, server actions, page protection
+
+prisma/
+└── schema.prisma          # Database models and enums
+
+public/
+└── images/                # Static assets</code></pre>
+
+    <h3 class="subsection">Making Yourself an Admin</h3>
+    <p style="margin-bottom:0.5rem; font-size:0.9rem; color:#5f6b66;">After creating an account, run the following against your database:</p>
+    <pre><code>UPDATE "User" SET role = 'ADMIN' WHERE email = 'your@email.com';</code></pre>
+
+    <h3 class="subsection">Data Models</h3>
+    <table>
+      <thead><tr><th>Model</th><th>Purpose</th></tr></thead>
+      <tbody>
+        <tr><td><code>User</code></td><td>Accounts with roles (USER / ADMIN), profile info, major</td></tr>
+        <tr><td><code>Flyer</code></td><td>Bulletin posts with category, color, RSVP list, save list, privacy toggle</td></tr>
+        <tr><td><code>Announcement</code></td><td>Admin-created site-wide messages</td></tr>
+        <tr><td><code>ContactMessage</code></td><td>Contact form submissions with read/unread status</td></tr>
+        <tr><td><code>PasswordResetToken</code></td><td>Tokens for email-based password resets</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- PROJECT BOARDS -->
+<div id="boards" style="background: #f5f1e6;">
+  <div class="section-inner">
+    <h2 class="section-title">📌 Project Boards</h2>
+    <div class="boards-grid">
+      <a href="https://github.com/orgs/bowlletins/projects/5/views/2" class="board-card">
+        <div class="milestone">M1</div>
+        <span>Milestone 1 Board</span>
+      </a>
+      <a href="https://github.com/orgs/bowlletins/projects/6" class="board-card">
+        <div class="milestone">M2</div>
+        <span>Milestone 2 Board</span>
+      </a>
+      <a href="https://github.com/orgs/bowlletins/projects/8/views/1" class="board-card">
+        <div class="milestone">M3</div>
+        <span>Milestone 3 Board</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">📌 Bow-lletins</div>
+  <p>Built for UH Mānoa &nbsp;·&nbsp; <a href="https://bowlletins.vercel.app/">Live Site</a> &nbsp;·&nbsp; <a href="https://github.com/bowlletins">GitHub</a></p>
+</footer>
+
+</body>
+</html>
